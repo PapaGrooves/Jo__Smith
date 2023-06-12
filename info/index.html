@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="ff ff ff" />
+    <title>Jo Smith Photography</title>
+    <!-- Icon library -->
+    <script
+      src="https://kit.fontawesome.com/133370dc7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../sass/app.css">
+    <style>
+        /* Imported Google font */
+      @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+    </style>
+    <!-- meta tags for seo -->
+    <meta name="title" content="Jo Smith Photographer" />
+    <meta
+      name="description"
+      content="Jo Smith is a Photography graduate who was born in Dundee. "
+    />
+    <meta
+      name="keywords"
+      content="photographer, Dundee, weddings, wedding photography, landscape photography, nature photography, Scotland"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="30 days" />
+    <meta name="author" content="Jo Smith" />
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body class="bodeh" 
+  onload="canvasElement()"
+  >
+    <!-- container with upper half of info page, or left side at bigger screen size -->
+    <div class="wedding">
+            <script src="../js/script.js"></script>
+            <!-- on click event, making page scroll 100vh -->
+            <div class="wedding__image__wrap" onclick="window.scrollBy(0, window.innerHeight);" >
+              <!-- the image that appears as bouncing button on the page -->
+              <img class="wedding__image" src="../images/arrows.png" alt=""  />
+            </div>
+            <!-- button to gallery page -->
+            <div class="wedding__link">
+              <a href="../gallery/index.html"><button class="hero__button is--forward">Gallery</button></a>
+            </div>  
+          </div>
+          <!-- container with bottom half of the page, or right side on biger screens -->
+          <div class="info">
+            <div class="info__wrap">
+              <!-- canvas element, using JS, adding a firefly effect over the container -->
+              <!-- <canvas class="canvas" id="canvas"></canvas> -->
+        <!-- Jo Smiths logo -->
+        <a href="../index.html"><img class="hero__image2" src="../images/herologo.png" alt=""/></a>
+        <!-- container with all services and prices -->
+        <div class="info__services">
+          <h1>SERVICES</h1>
+          <ul>
+            <li>
+              <p>Private events</p>
+              <p class="is--center">£40/h</p>
+            </li>
+            <li>
+              <p>Short-term contractual work</p>
+              <p class="is--center">£25/h</p>
+            </li>
+            <li>
+              <p>Long-term contractual work</p>
+              <p class="is--center">negotiable</p>
+            </li>
+          </ul>
+        </div>
+        <!-- container with all contact info, google map and twitter feed -->
+        <div class="info__contact">
+          <h1>CONTACT</h1>
+          <h3>987 Brook Street | Dundee | DD5 2EA</h3>
+          <!-- Google map -->
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.509203359456!2d-2.8673487575629943!3d56.464996271820496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865e96e548488d%3A0x652981c5a1436741!2s987%20Brook%20St%2C%20Broughty%20Ferry%2C%20Dundee%20DD5%202EA!5e0!3m2!1sen!2suk!4v1661282143157!5m2!1sen!2suk"
+          width="600px" style="border: 0" loading="lazy" 
+          ></iframe>
+        </div>
+        <!-- STUB embeded twitter feed -->
+        <div class="twitter-feed">
+          <a
+          class="twitter-timeline" data-height="300" data-width="100%"
+          href="https://twitter.com/josmithphoto?ref_src=twsrc%5Etfw">
+          Tweets by josmithphoto</a>
+          <!-- Script for twitter feed to work -->
+          <script
+          async src="https://platform.twitter.com/widgets.js" charset="utf-8"
+          ></script>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+   
+</html>

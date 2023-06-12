@@ -1,0 +1,32 @@
+/* social media icons style */
+.hero__social {
+    width: 3em;
+    height: 3em;
+    padding: 5px;
+    filter: Invert();
+    border-radius: 50%;
+    border: 3px var(--black-100) solid;
+    margin: 0.75em 0.45em;
+    transition: 1s ease-in-out;
+  }
+
+  /* targets twitter button */
+.is--twitter:hover {
+    filter: none;
+    border-color: var(--twitter-color);
+    transition: 1s ease-in-out;
+  }
+  
+  /* targets pinterest button */
+  .is--pinterest:hover {
+    filter: none;
+    border-color: var(--pinterest-color);
+    transition: 1s ease-in-out;
+  }
+  
+  /* targets instagram button */
+  .is--instagram:hover {
+    filter: none;
+    border-color: var(--instargam-color);
+    transition: 1s ease-in-out;
+  }

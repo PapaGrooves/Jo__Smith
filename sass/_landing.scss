@@ -1,0 +1,139 @@
+/* ANCHOR Landing page code */
+/* landing page dimensions */
+.landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+  
+    /* this is where the first image is stored
+  along with buttons leading to other pages
+  This overlays the landing container */
+    .hero {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: var(--black-30);
+  
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+  
+      /* website logo */
+      .hero__image {
+        max-height: 10em;
+        max-width: 100%;
+        width: auto;
+        overflow: hidden;
+        filter: Invert();
+      }
+  
+      /* container with the buttons */
+      .hero__buttons {
+        max-width: 60%;
+        text-align: center;
+      }
+  
+      /* social media icons container */
+      .hero__socials {
+        margin-top: 1em;
+        background-color: transparent;
+  
+        
+      }
+    }
+  
+    /* container with the iomages */
+    .images-slider {
+      height: 100vh;
+      width: 100vw;
+  
+      display: flex;
+      position: relative;
+      z-index: 1;
+      align-items: center;
+      justify-content: center;
+  
+      /* this stores the empty list items for the images */
+      #slides {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        /* empty list item
+  positioning and visibility */
+        .slide {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          z-index: 1;
+          /* fade-in-out effect for all browsers */
+          -webkit-transition: opacity 1s;
+          -moz-transition: opacity 1s;
+          -o-transition: opacity 1s;
+          transition: opacity 1s;
+  
+          background-size: cover !important;
+        }
+  
+        /* send the "current" image to the top */
+        .showing {
+          opacity: 1;
+          z-index: 2;
+        }
+  
+        /* select images that display on the landing page
+  controlled by script */
+        .slide:nth-of-type(1) {
+          background: url(/images/herobg/LandscapePhotography/landscape2.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(2) {
+          background: url(/images/herobg/WeddingPhotography/wedding1.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(3) {
+          background: url(/images/herobg/LandscapePhotography/landscape3.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(4) {
+          background: url(/images/herobg/LandscapePhotography/landscape1.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(5) {
+          background: url(/images/herobg/LandscapePhotography/landscape4.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(6) {
+          background: url(/images/herobg/LandscapePhotography/landscape5.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(7) {
+          background: url(/images/herobg/LandscapePhotography/landscape6.jpg)
+            no-repeat top;
+        }
+  
+        .slide:nth-of-type(8) {
+          background: url(/images/herobg/LandscapePhotography/landscape7.jpg)
+            no-repeat top;
+        }
+      }
+    }
+  }

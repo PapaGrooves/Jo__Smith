@@ -1,0 +1,73 @@
+/* ANCHOR Gallery page code */
+
+/* container with images on gallery page */
+/* FIXME the refresh in gallery, make it seamless */
+.gallery-wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-100);
+  
+    // styling and positioning for a row of images
+    .row {
+      overflow: hidden;
+      display: flex;
+      height: 21%;
+      width: 100%;
+      // setting animation style for all rows
+       div {
+        animation: slide 20s linear infinite;
+      }
+      // every div containing an image in every row 
+      .row__img {
+        height: 100%;
+  
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  
+    /* sets rows to slide the opposite way   */
+    .--is-right {
+      -moz-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
+      -ms-filter: fliph;
+      /*IE*/
+      filter: fliph;
+      /*IE*/
+    }
+  
+    /* Styling for row and logo in the middle of gallery page */
+    .row__middle {
+      height: 16%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // logo in the middle row
+      .row__middle-img {
+        filter: Invert();
+        height: 100%;
+        max-width: auto;
+        z-index: 100;
+  
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  
+  /* STUB used code made by Avneesh Agarwal, link in credits.md */
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: translate3d(-100vw, 0, 0);
+    }
+  }

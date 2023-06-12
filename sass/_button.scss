@@ -1,0 +1,19 @@
+ /* button styling */
+ .hero__button {
+    width: 10em;
+    height: 5em;
+    border: 3px solid var(--white-100);
+    background-color: transparent;
+    color: var(--white-100);
+    cursor: pointer;
+    margin: 1em auto;
+    font-weight: 900;
+    font-size: 17.5px;
+    transition: 1s ease-in-out;
+
+    &:hover {
+      color: black;
+      border-color: turquoise;
+      transition: 1s ease-in-out;
+    }
+  }

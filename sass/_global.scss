@@ -1,0 +1,76 @@
+/* ANCHOR global settings */
+/* NOTE Use the Comment Anchors extension to make the comments make sense :D  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aboreto", cursive;
+  scroll-behavior: smooth;
+  // Firefox scrollbar
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--white-100);
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+&::-webkit-scrollbar {
+  width: 12px;
+}
+
+&::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: var(--white-100);
+  border-radius: 50px;
+  border: 3px solid var(--main-color);
+}
+}
+
+
+/* Variables holding all the colors appearing on site
+and some extra shades if needed */
+:root {
+  --main-color: #40e0d0;
+  --twitter-color: #00acee;
+  --pinterest-color: #e60023;
+  --instargam-color: #8a3ab9;
+
+  --black-100: rgba(0, 0, 0, 1);
+  --black-90: rgba(0, 0, 0, 0.9);
+  --black-80: rgba(0, 0, 0, 0.8);
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-60: rgba(0, 0, 0, 0.6);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-40: rgba(0, 0, 0, 0.4);
+  --black-30: rgba(0, 0, 0, 0.3);
+  --black-20: rgba(0, 0, 0, 0.2);
+  --black-10: rgba(0, 0, 0, 0.1);
+
+  --white-100: rgba(255, 255, 255, 1);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-10: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
